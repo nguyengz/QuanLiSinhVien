@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SinhVienActivity">
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SinhvienActivity"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/txtGetdata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lấy danh sách sinh viên"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/textview1"
+        />
+    <Button
+        android:id="@+id/btnGetdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lấy DS sinh viên"
+        app:layout_constraintTop_toBottomOf="@+id/txtGetdata"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <ListView
+        android:id="@+id/lvSvien"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGetdata" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
